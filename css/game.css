@@ -1,0 +1,180 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+#ratingtable {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+tr, td, th {
+    padding: 10px;
+    border: 2px solid darkorange;
+}
+
+.tablecapt {
+    padding: 10px;
+    font-size: 24px;
+}
+
+@font-face {
+    font-family: 'MultiroundPro';
+    src: url('../fonts/MultiroundPro.otf');
+}
+
+.gamefont {
+    font-family: 'MultiroundPro';
+    font-weight: 700;
+    color: darkorange;
+    text-shadow: rgb(91, 36, 0) 1px 1px;
+}
+
+#gamelogo {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.help {
+    margin-top: 3%;
+    margin-left: 5%;
+    font-family: 'MultiroundPro';
+    text-align: left;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#namelabel {
+    position: absolute;
+    bottom: 24%;
+}
+
+#gamecontainer {
+    display: flex;
+    margin-left: 8%;
+    margin-top: 2%;
+    width: 84%;
+    height: 90%;
+    border: 6px solid darkorange;
+    border-radius: 10px;
+    box-shadow: rgb(91, 36, 0) 4px 2px;
+}
+
+#rescontainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-top: 2%;
+    width: 84%;
+    height: 90%;
+    border: 6px solid darkorange;
+    border-radius: 10px;
+    box-shadow: rgb(91, 36, 0) 4px 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.centering {
+    display: flex;
+    justify-content: center;
+}
+
+#gamewindow {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#gameinfo {
+    border-left: 2px solid orange;
+    display: none;
+    width: 10%;
+}
+
+.infoline {
+    padding: 5% 5%;
+}
+
+#continuebtn {
+    position: absolute;
+    padding: 6px;
+    border: 2px solid orange;
+    box-shadow: rgb(91, 36, 0) 2px 2px;
+    border-radius: 10%;
+    bottom: 8%;
+    font-size: calc(16px + 20%);
+}
+
+#namefield {
+    position: absolute;
+    padding: 4px;
+    border: 2px solid darkorange;
+    box-shadow: rgb(91, 36, 0) 2px 2px;
+    border-radius: 10%;
+    bottom: 16%;
+    border-radius: 2px;
+}
+
+.logoletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4px 6px;
+    animation-duration: 1.5s;
+    animation-name: logoletteranim;
+    color: white;
+    font-size: 26px;
+}
+
+.helpline {
+    margin: 3% 5%;    
+    font-size: calc(16px + 20%);
+}
+
+@keyframes logoletteranim {
+    0% {
+        transform: translateX(100px);
+    }
+    
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+.gameobject {
+    position: absolute;
+}
+
+.disk {
+    box-shadow: inset -2px -8px rgb(0, 0, 0, 0.6);
+}
+
+.bonus {
+    border-radius: 50%;
+    box-shadow: inset -2px -8px rgb(0, 0, 0, 0.6);
+}
+
+.gravitable {
+
+}
+
+.pyramid {
+    background-color: gray;
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.4);
+    border-radius: 20% 20% 0px 0px / 100% 100% 0px 0px;
+}
+
+.axis {
+    background-color: gray;
+}
